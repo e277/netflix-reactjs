@@ -6,14 +6,16 @@ import requests from '../Request'
 const Home = () => {
 
     return (
-        <div>
-            <Main />
-            <Row title='UpComing' fetchURL={requests.requestUpcoming} />
-            <Row title='Popular' fetchURL={requests.requestPopular} />
-            <Row title='Trending' fetchURL={requests.requestTrending} />
-            <Row title='TopRated' fetchURL={requests.requestTopRated} />
-            <Row title='Horror' fetchURL={requests.requestHorror} />
-        </div>
+        <>
+            <div>
+                <Main />
+                <Row rowID='1' title='UpComing' fetchURL={requests.requestUpcoming} />
+                <Row rowID='2' title='Popular' fetchURL={requests.requestPopular} />
+                <Row rowID='3' title='Trending' fetchURL={requests.requestTrending} />
+                <Row rowID='4' title='TopRated' fetchURL={requests.requestTopRated} />
+                <Row rowID='5' title='Horror' fetchURL={requests.requestHorror} />
+            </div>
+        </>
     )
 }
 
