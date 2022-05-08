@@ -1,5 +1,8 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, {
+    useEffect,
+    useState
+} from 'react'
 import requests from '../Request'
 
 const Main = () => {
@@ -21,7 +24,6 @@ const Main = () => {
         }
         return str
     }
-
 
     return (
         <>

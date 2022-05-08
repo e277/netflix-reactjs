@@ -1,7 +1,13 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, {
+    useEffect,
+    useState
+} from 'react'
 import Movie from './Movie'
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
+import {
+    MdChevronLeft,
+    MdChevronRight
+} from 'react-icons/md'
 
 const Row = ({ rowID, title, fetchURL }) => {
 
@@ -22,7 +28,6 @@ const Row = ({ rowID, title, fetchURL }) => {
         var slider = document.getElementById('slider' + rowID)
         slider.scrollLeft = slider.scrollLeft + 500
     }
-
 
     return (
         <>
