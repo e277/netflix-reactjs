@@ -6,7 +6,6 @@ import {
 import { UserAuth } from '../context/AuthContext'
 import { db } from '../firebase'
 import { arrayUnion, doc, updateDoc } from 'firebase/firestore'
-import { async } from '@firebase/util'
 
 const Movie = ({ movieItem }) => {
 

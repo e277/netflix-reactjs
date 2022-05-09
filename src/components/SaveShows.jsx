@@ -7,7 +7,6 @@ import {
 import { UserAuth } from '../context/AuthContext'
 import { db } from '../firebase'
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore'
-import { async } from '@firebase/util'
 
 const SaveShows = () => {
 
